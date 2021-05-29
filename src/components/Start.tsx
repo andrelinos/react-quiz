@@ -2,7 +2,7 @@ import './styles.module.scss';
 
 export default function Start({ onQuizStart }) {
   return (
-    <div className="container">
+    <div className="bg-white dark:bg-gray-800">
       <div className="card">
         <div className="card-content">
           <div className="content">

@@ -9,6 +9,7 @@ import Modal from '../components/Modal';
 import quizData from '../data/quiz.json';
 
 import '../styles/global.scss';
+import 'tailwindcss/tailwind.css';
 
 let interval: NodeJS.Timeout;
 
