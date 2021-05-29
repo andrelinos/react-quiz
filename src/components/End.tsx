@@ -2,13 +2,27 @@ import { useEffect, useState } from 'react';
 
 import { formatTime } from '../utils/time';
 
-export default function End({ results, data, onReset, onAnswerCheck, time }) {
+interface EndProps {
+  results: [
+    {
+      a: string,
+    }
+  ];
+  data: Array<{
+    answer: string;
+  }>;
+  onReset: () => void;
+  onAnswerCheck: () => void;
+  time: number;
+}
+
+export default function End({ results, data, onReset, onAnswerCheck, time }: EndProps) {
   const [currentAnswers, setCorrectAnswers] = useState(0);
 
   useEffect(() => {
     let correct = 0;
     results.forEach((result, index) => {
-      if(result.a === data[index].answer) {
+      if (result.a === data[index].answer) {
         correct++;
       }
     });

@@ -26,7 +26,7 @@ export default function Modal({ onClose, results, data }: ModalProps): JSX.Eleme
                   ? 'has-background-sucess has-text-white p-2'
                   : 'has-background-danger has-text-white p-2'
                 }>Sua resposta: {result.a}</p>
-                {result.a !== data[i].answer && 
+                {result.a !== data[i].answer &&
                   <p className="has-background-link has-text-white p-2"
                   >Resposta correta: {data[i].answer}</p>}
               </li>
