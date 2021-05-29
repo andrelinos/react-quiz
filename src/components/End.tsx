@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-import {formatTime} from '../utils/time';
+import { formatTime } from '../utils/time';
 
 export default function End({ results, data, onReset, onAnswerCheck, time }) {
   const [currentAnswers, setCorrectAnswers] = useState(0);
